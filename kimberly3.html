@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+     <meta charset="UTF-8">
+     <title>Gonzalez Limon Kimberly  </title>
+         <style>
+             
+             html, body {
+                 margin: 0;
+                 padding: 0;
+                 width: 100%;
+                 min-height: 100vh;
+                 background-color: rgb(255, 207, 207); /* El color ahora cubre TODA la pantalla */
+                 font-family: "Times New Roman", serif;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+             /* Cabecera de lado a lado */
+             header {
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 background-color: rgb(255, 200, 228);
+                 padding: 15px 30px; /* Más espacio a los lados */
+                 box-sizing: border-box;
+             }
+
+             .logo-pequeno {
+                 width: 50px;
+                 height: auto;
+                 display: block;
+             }
+
+             .barra-navegacion {
+                 display: flex;
+                 gap: 15px;
+                 margin-top: 10px;
+             } 
+
+             .boton-nav {
+                 text-decoration: none;
+                 color: rgb(0, 0, 0);
+                 background-color: rgb(232, 144, 203);
+                 padding: 8px 16px;
+                 border-radius: 4px;
+                 font-size: 14px;
+                 font-family: Georgia, serif;
+                 transition: background-color 0.3s;
+             }
+
+             .boton-nav:hover {
+                 background-color: rgb(238, 146, 164);
+                 color: rgb(255, 255, 255);
+             } 
+
+             .boton-nav.activo {
+                 background-color: rgb(246, 125, 194);
+                 color: rgb(255, 255, 255);
+                 font-weight: bold;
+             }
+
+             /* Contenedor principal que se estira al ancho completo */
+             main {
+                 display: flex;
+                 gap: 30px;
+                 padding: 30px;
+                 box-sizing: border-box;
+                 flex: 1; /* Empuja el footer hacia abajo si hay poco contenido */
+                 width: 100%;
+             }
+
+             /* Columna del anuncio */
+             aside {
+                 width: 25%; 
+                 display: flex;
+                 justify-content: center;
+                 align-items: flex-start;
+             }
+
+             aside img {
+                 width: 100%; /* El anuncio se adapta a su columna */
+                 max-width: 350px;
+                 height: 900;
+                 display: block;
+                 border-radius: 4px;
+             }
+
+             /* Columna de la información */
+             section {
+                 width: 75%;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+             article {
+                 width: 100%;
+                 background-color: rgba(255, 255, 255, 0.3); /* Un fondo sutil para leer mejor el texto */
+                 padding: 25px;
+                 border-radius: 6px;
+                 box-sizing: border-box;
+             }
+
+             article img {
+                 width: 450;
+                 height: 300;
+                 display: block;
+                 align-items: center;
+                 margin-bottom: 20px;
+                 border-radius: 4px;
+             }
+
+             /* Pie de página de lado a lado */
+             footer {
+                 background-color: rgb(255, 172, 206);
+                 text-align: center;
+                 padding: 15px;
+                 width: 100%;
+                 box-sizing: border-box;
+             }
+
+             footer  {
+                 margin: 0;
+                 font-size: 14px;
+             }
+         </style>
+    </head>  
+    <body>
+        <header>
+            <div>
+                <h1 style="margin:0;">Mi sitio web</h1>
+                <nav class="barra-navegacion">
+                    <a href="kimberly1.html" class="boton-nav ">Inicio</a>
+                    <a href="kimberly2.html" class="boton-nav ">Patitos</a>
+                    <a href="kimberly3.html" class="boton-nav activo">Hija</a>
+                </nav>
+            </div>
+            <img src="Imagenes/1000034542.jpg" alt="logo de mi sitio web" title="logo de la marca" class="logo-pequeno">
+        </header>
+
+        <main>
+            <aside>
+                <img src="Imagenes/Publicidad rosita.jpg" alt="anuncios">
+            </aside>
+            <section>
+                <article>
+                    <img src="Imagenes/Charlie.png" alt="foto" width="810" height="400" align-items= center>
+                    <h1>Charlie Morningstar </h1>
+                    <p> Charlie Morningstar es la optimista e idealista protagonista de Hazbin Hotel, princesa del Infierno y la única hija de Lucifer Morningstar y Lilith. A diferencia de los despiadados demonios de su reino, Charlie posee un corazón compasivo y profundamente empático que la impulsa a fundar el hotel con el objetivo de rehabilitar a los pecadores para salvarlos del exterminio anual del Cielo. Su relación con Lucifer es el núcleo emocional de la serie; aunque inicialmente estaba marcada por el distanciamiento, el abandono emocional y la falta de fe de su padre hacia su proyecto, el vínculo se transforma gracias al profundo amor paternal y la reconciliación mutua. Lucifer pasa de ser una figura ausente a convertirse en el protector más feroz de Charlie, apoyando activamente su sueño e interviniendo con su inmenso poder celestial para defenderla de cualquier peligro. </p>      
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>Gonzalez Limon Kimberly</p>
+        </footer>
+    </body>
+</html>

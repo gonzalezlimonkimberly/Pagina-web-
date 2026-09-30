@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+     <meta charset="UTF-8">
+     <title>Gonzalez Limon Kimberly  </title>
+         <style>
+             
+             html, body {
+                 margin: 0;
+                 padding: 0;
+                 width: 100%;
+                 min-height: 100vh;
+                 background-color: rgb(223, 218, 73); /* El color ahora cubre TODA la pantalla */
+                 font-family: "Times New Roman", serif;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+             /* Cabecera de lado a lado */
+             header {
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 background-color: rgb(255, 255, 215);
+                 padding: 15px 30px; /* Más espacio a los lados */
+                 box-sizing: border-box;
+             }
+
+             .logo-pequeno {
+                 width: 50px;
+                 height: auto;
+                 display: block;
+             }
+
+             .barra-navegacion {
+                 display: flex;
+                 gap: 15px;
+                 margin-top: 10px;
+             } 
+
+             .boton-nav {
+                 text-decoration: none;
+                 color: rgb(1, 1, 1);
+                 background-color: rgb(219, 227, 10);
+                 padding: 8px 16px;
+                 border-radius: 4px;
+                 font-size: 14px;
+                 font-family: Georgia, serif;
+                 transition: background-color 0.3s;
+             }
+
+             .boton-nav:hover {
+                 background-color: rgb(249, 178, 24);
+                 color: rgb(0, 0, 0);
+             } 
+
+             .boton-nav.activo {
+                 background-color: rgb(241, 236, 89);
+                 color: white;
+                 font-weight: bold;
+             }
+
+             /* Contenedor principal que se estira al ancho completo */
+             main {
+                 display: flex;
+                 gap: 30px;
+                 padding: 30px;
+                 box-sizing: border-box;
+                 flex: 1; /* Empuja el footer hacia abajo si hay poco contenido */
+                 width: 100%;
+             }
+
+             /* Columna del anuncio */
+             aside {
+                 width: 25%; 
+                 display: flex;
+                 justify-content: center;
+                 align-items: flex-start;
+             }
+
+             aside img {
+                 width: 100%; /* El anuncio se adapta a su columna */
+                 max-width: 350px;
+                 height: 750;
+                 display: block;
+                 border-radius: 4px;
+             }
+
+             /* Columna de la información */
+             section {
+                 width: 75%;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+             article {
+                 width: 100%;
+                 background-color: rgba(255, 255, 255, 0.3); /* Un fondo sutil para leer mejor el texto */
+                 padding: 25px;
+                 border-radius: 6px;
+                 box-sizing: border-box;
+             }
+
+             article img {
+                 max-width: 100%;
+                 
+                 display: block;
+                 margin-bottom: 20px;
+                 border-radius: 4px;
+             }
+
+             /* Pie de página de lado a lado */
+             footer {
+                 background-color: khaki;
+                 text-align: center;
+                 padding: 15px;
+                 width: 100%;
+                 box-sizing: border-box;
+             }
+
+             footer p {
+                 margin: 0;
+                 font-size: 14px;
+             }
+         </style>
+    </head>  
+    <body>
+        <header>
+            <div>
+                <h1 style="margin:0;">Mi sitio web</h1>
+                <nav class="barra-navegacion">
+                    <a href="kimberly1.html" class="boton-nav ">Inicio</a>
+                    <a href="kimberly2.html" class="boton-nav activo">Patitos</a>
+                    <a href="kimberly3.html" class="boton-nav">Hija</a>
+                </nav>
+            </div>
+            <img src="Imagenes/logo segundo.jpg" alt="logo de mi sitio web" title="logo de la marca" class="logo-pequeno">
+        </header>
+
+        <main>
+            <aside>
+                <img src="Imagenes/3333..jpg" alt="anuncios" height="500" width="650">
+            </aside>
+            <section>
+                <article>
+                    <img src="Imagenes/patitos.png" alt="foto" height="400" width="810">
+                    <h1>Patitos de goma</h1>
+                    <p> La obsesión de Lucifer por los patitos de goma funciona como un mecanismo de afrontamiento psicológico y una vía de escape para su profunda depresión y aislamiento. Tras ser desterrado del Cielo y ver cómo su regalo del libre albedrío corrompía a la humanidad, Lucifer cayó en el desánimo al sentirse incapaz de salvar a los pecadores del exterminio anual. En este contexto, fabricar miles de patitos con trucos mágicos mágicos (como escupir fuego o dar volteretas) se convirtió en su forma de mantener viva su esencia como ángel creador y de aferrarse a algo inocente, alegre y puro en un reino definido por la oscuridad</p>      
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>Gonzalez Limon Kimberly</p>
+        </footer>
+    </body>
+</html>
